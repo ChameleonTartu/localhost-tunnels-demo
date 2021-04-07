@@ -18,11 +18,14 @@
 		<kotlin.version>1.4.31</kotlin.version>
 	</properties>
 
+
+
 	<dependencies>
 		<dependency>
 			<groupId>khttp</groupId>
 			<artifactId>khttp</artifactId>
 			<version>1.0.0</version>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
