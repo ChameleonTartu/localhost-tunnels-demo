@@ -25,7 +25,7 @@ class CallbackProcessorService {
         for (callback in callbacks) {
             khttp.post(
                 url = callback,
-                json = notification
+                data = notification
             )
         }
     }
