@@ -20,7 +20,9 @@ class CallbackProcessorService {
     @Scheduled(fixedDelay = 3000)
     fun invokeCallbacks() {
         println("Invoke scheduled callbacks: ${LocalDateTime.now()}")
-        val notification = "{\"created\": true}"
+
+        val createdValue = listOf(true, false, "Random").shuffled().first()
+        val notification = "{\"created\": $createdValue}"
 
         for (callback in callbacks) {
             khttp.post(
