@@ -27,4 +27,8 @@ class CallbackProcessorService {
             )
         }
     }
+
+    fun callbacks(): List<String> {
+        return callbacks.toList()
+    }
 }

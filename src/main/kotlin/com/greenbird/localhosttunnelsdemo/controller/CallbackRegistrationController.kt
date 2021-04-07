@@ -17,4 +17,9 @@ class CallbackRegistrationController @Autowired constructor(val callbackProcesso
     fun unregister(@RequestParam("callback") callback: String) {
         callbackProcessorService.unregister(callback)
     }
+
+    @GetMapping("/callbacks")
+    fun callbacks(): List<String> {
+        return callbackProcessorService.callbacks()
+    }
 }
