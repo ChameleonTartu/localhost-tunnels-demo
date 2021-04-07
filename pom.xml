@@ -25,7 +25,6 @@
 			<groupId>khttp</groupId>
 			<artifactId>khttp</artifactId>
 			<version>1.0.0</version>
-			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
