@@ -12,7 +12,11 @@ class CallbackProcessorService {
         callbacks.add(callback)
     }
 
-    @Scheduled(fixedDelay = 1000)
+    fun unregister(callback: String) {
+        callbacks.remove(callback)
+    }
+
+    @Scheduled(fixedDelay = 3000)
     fun invokeCallbacks() {
         val notification = "{\"created\": true}"
 
